@@ -11,7 +11,7 @@ function Navbar() {
                     <img className="Navbar__Image" src={Logo} alt="" />
                 </div>
                 <div className="Navbar__Link--Container">
-                    <NavLink to="/" activeClassName="Selected" className="Navbar__Links">Home</NavLink>
+                    <NavLink to="/" className="Navbar__Links">Home</NavLink>
                     <NavLink to="/TableSearch" activeClassName="Selected" className="Navbar__Links">Coffee Table Search</NavLink>
                     <NavLink to="/TaskList" activeClassName="Selected" className="Navbar__Links">Task List</NavLink>
                 </div>

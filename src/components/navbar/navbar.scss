@@ -1,7 +1,10 @@
 @use '../partials/reset.scss' as *;
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 
-
+.Selected {
+    border-bottom: 1px solid #FFFFFF;
+    opacity: 0.6;
+}
 
 .Navbar {
    display: flex;
