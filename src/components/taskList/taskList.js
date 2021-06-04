@@ -39,24 +39,26 @@ function TaskList() {
 
   
     return (
-        <div className="TaskList">
-            <h3 className="TaskList__Header">Tasks to complete</h3>
-            <ul className="TaskList__Container">
-            {tasks.map(task => {
-                return(
-                    <Task
-                    key={task.id}
-                    id={task.id}
-                    task={task.task}
-                    completed={task.completed}
-                    deleteTask={deleteTask}
-                    updateTask={updateTask}
-                    toggleCompletion={toggleCompletion}
-                    />
-                )
-            })}
-            </ul>
-           <AddTaskForm createTask={createTask} />
+        <div className="Container">
+            <div className="TaskList">
+                <h3 className="TaskList__Header">Tasks to complete</h3>
+                <ul className="TaskList__Container">
+                {tasks.map(task => {
+                    return(
+                        <Task
+                        key={task.id}
+                        id={task.id}
+                        task={task.task}
+                        completed={task.completed}
+                        deleteTask={deleteTask}
+                        updateTask={updateTask}
+                        toggleCompletion={toggleCompletion}
+                        />
+                    )
+                })}
+                </ul>
+            <AddTaskForm createTask={createTask} />
+            </div>
         </div>
     )
 }

@@ -2,9 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
 
 
-body {
-    // background-image: radial-gradient(circle, #c9c980, #d4d489, #dfdf92, #eaea9b, #f5f5a4);
+.Container {
+    display: flex;
     background-image: radial-gradient(circle, #f5f5a4, #eaea9b, #dfdf92, #d4d489, #c9c980);
+    height: 100vh;
+
+    margin-top: 0;
 }
 .TaskList {
     display: flex;

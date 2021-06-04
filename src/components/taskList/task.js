@@ -34,11 +34,10 @@ function Task(props) {
 
 
 
-    let result;
-
+    let render;
     if (isEditing) {
     
-        result = (
+        render = (
             <div className="Task">
                 <form className="Task__Edit--Form" onSubmit={handleUpdate}>
                     <input
@@ -54,7 +53,7 @@ function Task(props) {
 
         } else {
         
-        result = (
+        render = (
 
             <div className="Task">
                 <div className="Task__Item-Checkmark--Container">
@@ -69,7 +68,8 @@ function Task(props) {
         
         )
     }
-return result;
+    
+return render;
     
 }
 
