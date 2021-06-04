@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import DeleteIcon from '../../assets/Delete-icon.png';
 import EditIcon from '../../assets/Edit-icon.png';
+import CheckedIcon from '../../assets/Checkmark-Icon.jpg';
 import './task.scss';
 
 function Task(props) {
     const [isEditing, setIsEditing] = useState(false);
     const [currentTask, setCurrentTask] = useState('')
 
-    const { id, task, deleteTask, updateTask } = props;
+    const { id, task, deleteTask, updateTask, toggleCompletion, completed } = props;
 
     const handleDelete = () => {
         deleteTask(id);
@@ -27,6 +28,10 @@ function Task(props) {
        setCurrentTask(e.target.value)
     } 
 
+    const handleToggle = (e) => {
+        toggleCompletion(id);
+    }
+
 
 
     let result;
@@ -35,8 +40,9 @@ function Task(props) {
     
         result = (
             <div className="Task">
-                <form className="Task-Edit-Form" onSubmit={handleUpdate}>
+                <form className="Task__Edit--Form" onSubmit={handleUpdate}>
                     <input
+                    className="Task__Edit--Input"
                     type="text"
                     name="task"
                     value={currentTask}
@@ -51,7 +57,10 @@ function Task(props) {
         result = (
 
             <div className="Task">
-                <li className="Task__Item">{task}</li>
+                <div className="Task__Item-Checkmark--Container">
+                    <img onClick={handleToggle} className={completed ? "Task__Checkmark Completed" : "Task__Checkmark"} src={CheckedIcon} alt="Checkmark Icon" />
+                    <li onClick={handleToggle} className={completed ? "Task__Item Completed" : "Task__Item"}>{task}</li>
+                </div>
                 <div className="Task__Icons">
                     <img onClick={toggleForm} className="Task__Edit" src={EditIcon} alt="Pencil" />
                     <img onClick={handleDelete} className="Task__Delete" src={DeleteIcon} alt="Trash Can" />

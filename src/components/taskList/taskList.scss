@@ -1,6 +1,11 @@
 @use '../partials/reset.scss' as *;
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
 
+
+body {
+    // background-image: radial-gradient(circle, #c9c980, #d4d489, #dfdf92, #eaea9b, #f5f5a4);
+    background-image: radial-gradient(circle, #f5f5a4, #eaea9b, #dfdf92, #d4d489, #c9c980);
+}
 .TaskList {
     display: flex;
     flex-direction: column;
@@ -9,17 +14,19 @@
     margin: auto;
     margin-top: 10rem;
     width: 90%;
-    height: 40rem;
-    padding: 1rem 1rem;
-    background-color: beige;
+    max-width: 35rem;
+    height: 45rem;
+    max-height: 50rem;
+    padding: 1rem 2rem;
+    background-image: radial-gradient(circle, #f5f5dc, #f0f0d1, #eaeac6, #e5e5bc, #e0e0b1);
     border-radius: 10px;
     box-shadow: 7px 10px 15px 5px rgba(0,0,0,0.7);
 
     &__Header {
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Caveat', cursive;
         font-weight: 700;
-        font-size: 2.5rem;
-        margin: 2rem 0;
+        font-size: 4rem;
+        margin: 1rem 0 2rem 0;
     }
 
     &__Container {
