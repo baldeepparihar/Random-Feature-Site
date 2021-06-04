@@ -1,0 +1,148 @@
+@use '../partials/reset.scss' as *;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+
+.Body {
+    text-align: center;
+}
+
+.Home {
+    position: relative;
+    padding: 2rem 2rem;
+    background-image: radial-gradient(circle, #858e9b, #929eac, #9faebe, #adbecf, #bacfe1);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    &__Header {
+        position: relative;
+        font-size: 2.8rem;
+        line-height: 1.5em;
+        font-family: 'Noto Sans', sans-serif;
+        color: #fff;
+        margin-bottom: 3rem;
+    }
+
+    &__Header::after {
+        content: '';
+        position: absolute;
+        background-color: #fff;
+        width: 100%;
+        height: 1px;
+        bottom: -2rem;
+        left: 0rem;
+        opacity: 0.4;
+    }
+
+    &__Header2 {
+        font-size: 1.8rem;
+        line-height: 1.5em;
+        font-family: 'Noto Sans', sans-serif;
+        color: #fff;
+    }
+
+    &__Iframe {
+        width: 28rem;
+        height: 28rem;
+    }
+}
+
+.ContactInfo {
+    color: white;
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    max-width: 30rem;
+    opacity: 0.4;
+}
+
+@media (min-width: 550px) {
+    .Home {
+        position: relative;
+        padding: 2rem 3rem;
+    
+        &__Header {
+            position: relative;
+            font-size: 4rem;
+            line-height: 1.2em;
+            font-family: 'Noto Sans', sans-serif;
+            color: #fff;
+            margin-bottom: 6rem;
+        }
+    
+        &__Header::after {
+            bottom: -4rem;
+        }
+    
+        &__Header2 {
+            font-size: 2.2rem;
+            line-height: 1.7em;
+            font-family: 'Noto Sans', sans-serif;
+            color: #fff;
+        }
+    
+        &__Iframe {
+            width: 50rem;
+            height: 40rem;
+        }
+    }
+
+}
+
+@media (min-width: 768px) {
+    .Home {
+    
+        &__Header {
+            position: relative;
+            font-size: 5rem;
+            width: 80%;
+            margin: auto;
+            margin-bottom: 6rem;
+        }
+    
+        &__Header::after {
+            bottom: -4rem;
+        }
+    
+        &__Header2 {
+            font-size: 2.6rem;
+            width: 80%;
+            margin: auto;
+        }
+    
+        &__Iframe {
+            width: 60rem;
+            height: 45rem;
+        }
+    }
+
+}
+
+@media (min-width: 1280px) {
+    .Home {
+        &__Header {
+            position: relative;
+            font-size: 6rem;
+            width: 80%;
+            margin: auto;
+            margin-bottom: 6rem;
+        }
+    
+        &__Header::after {
+            bottom: -4rem;
+        }
+    
+        &__Header2 {
+            font-size: 2.9rem;
+            width: 60%;
+            margin: auto;
+        }
+    
+        &__Iframe {
+            width: 65rem;
+            height: 50rem;
+        }
+    }
+
+}

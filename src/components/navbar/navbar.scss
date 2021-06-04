@@ -1,0 +1,131 @@
+@use '../partials/reset.scss' as *;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+
+.Navbar {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background-image: linear-gradient(to top, #856ec8, #8564c3, #8658be, #884cb8, #8a3fb1);
+   padding: 0.5rem 1rem;
+   
+    &__Image--Container {
+        height: 6.5rem;
+    }
+
+    &__Image {
+        height: 7rem;
+    }
+
+    &__Link--Container {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__Links {
+        position: relative;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        margin: 0.5rem 0.9rem 0 0.9rem;
+        text-decoration: none;
+        list-style-type: none;
+        color: #fff;
+        font-family: 'Noto Sans', sans-serif;
+    }
+
+    &__Links::before {
+        content: '';
+        position: absolute;
+        background-color: #89ABE3FF;
+        width: 2px;
+        height: 75%;
+        bottom: 2px;
+        left: -.7rem;
+        opacity: 0.4;
+    }
+}
+
+
+@media (min-width: 550px) {
+    .Navbar {
+        
+        &__Image--Container {
+            height: 6.5rem;
+        }
+    
+        &__Image {
+            height: 7rem;
+            margin: 0 0.7rem;
+        }
+     
+         &__Link--Container {
+             display: flex;
+             justify-content: center;
+         }
+     
+         &__Links {
+             position: relative;
+             font-size: 1.4rem;
+             margin: 0.5rem 1.5rem 0rem 1.5rem;
+         }
+     
+         &__Links::before {
+             left: -1.5rem;
+         }
+     }
+}
+
+@media (min-width: 768px) {
+    .Navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        background-color: rgb(130, 93, 214);
+        padding: 0.5rem 1.5rem;
+        
+         &__Image--Container {
+            height: 7rem;
+         }
+
+         &__Image {
+             height: 7rem;
+             margin: 0.5rem 0rem;
+         }
+     
+         &__Link--Container {
+             display: flex;
+             justify-content: center;
+         }
+     
+         &__Links {
+             position: relative;
+             font-size: 1.6rem;
+         }
+     
+         &__Links::before {
+             left: -1.5rem;
+         }
+     }
+}
+
+@media (min-width: 1280px) {
+    .Navbar {
+        // padding: 1rem 1rem
+     
+         &__Link--Container {
+             display: flex;
+             justify-content: center;
+         }
+     
+         &__Links {
+             position: relative;
+             font-size: 1.8rem;
+         }
+     
+         &__Links::before {
+             left: -1.5rem;
+         }
+     }
+}

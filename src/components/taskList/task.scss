@@ -1,0 +1,42 @@
+@use '../partials/reset.scss' as *;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;900&display=swap');
+
+.Task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    margin-top: 0.5rem;
+    width: 100%;
+    
+    &__Item {
+        list-style-type: none;
+        text-decoration: none;
+    }
+
+    &__Icons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__Edit {
+        width: 2rem;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    &__Delete {
+        width: 2.5rem;
+        margin-left: 1rem;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+
+}

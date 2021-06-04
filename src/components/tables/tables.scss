@@ -1,0 +1,10 @@
+@use '../partials/reset' as *;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;900&display=swap');
+
+@media (min-width: 768px) {
+   .Table {
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+   }
+}

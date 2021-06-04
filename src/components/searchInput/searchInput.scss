@@ -1,0 +1,24 @@
+@use '../partials/reset' as *;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;900&display=swap');
+
+
+.Search {
+    display: flex;
+    margin: 2rem auto;
+    height: 4rem;
+    width: 90vw;
+    border: none;
+    border-bottom: 2px solid rgb(172, 143, 243);
+
+    &:focus {
+        padding-left: 2rem;
+        font-size: 2rem;
+        outline: none;
+    }
+}
+
+::placeholder {
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: rgb(172, 143, 243);
+}

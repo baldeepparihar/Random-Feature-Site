@@ -1,0 +1,154 @@
+@use '../partials/reset' as *;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;900&display=swap');
+
+
+.Table {
+    padding: 0.5rem 1rem;
+
+    .Table--Wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+    
+        ::after {
+            content: "";
+            position: absolute;
+            border-top: 2px solid rgb(172, 143, 243);
+            width: 90vw;
+            bottom: -1.5rem;
+            left: -0.5rem;
+            }
+        }
+
+        &__Image--Wrapper {
+            margin-bottom: 2rem;
+        }
+         
+             &__Image {
+                 height: 28rem;
+                 width: auto;
+                 border: 2px solid rgb(172, 143, 243);
+                 border-radius: 5px;
+                 background-color: #FFF;
+             }
+
+             &__Info {
+                font-family: 'Raleway', sans-serif;
+                font-weight: 200;
+                font-size: 1.4rem;
+                margin-bottom: 1.5rem;
+            }
+
+            &__Price {
+                font-family: 'Raleway', sans-serif;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 1.4rem;
+            }
+
+            &__Brand {
+                font-family: 'Raleway', sans-serif;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 1.4rem;
+            }
+
+            &__Container--Right {
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                height: 5rem;
+                width: 100%;
+            }
+    
+            &__PlusMinus--Toggle {
+                height: 3rem;
+                width: auto;
+                
+            }
+
+            &__PlusMinus--Toggle:hover {
+                cursor: pointer;
+                background-color: rgb(172, 143, 243);
+                border-radius: 50%;
+                opacity: 0.6;
+            }
+}
+
+
+@media (min-width: 550px) {
+
+    .Table {
+        padding: 1rem 1rem;
+    
+        .Table--Wrapper {
+            margin-bottom: 3rem;
+        
+            ::after {
+                content: "";
+                position: absolute;
+                border-top: 2px solid rgb(172, 143, 243);
+                width: 90vw;
+                bottom: -1.5rem;
+                left: 0.5rem;
+                }
+            }
+    
+            &__Image-Info--Container {
+                display: flex;
+                align-items: flex-end;
+            }
+             
+                 &__Image {
+                     height: 32rem;
+                 }
+    
+                 &__Info--Wrapper {
+                     margin-bottom: 1.5rem;
+                     margin-left: 1.5rem;
+                 }
+
+    }
+
+}
+
+
+
+
+
+@media (min-width: 768px) {
+
+
+    .Table {
+        padding: 1rem 2rem;
+    
+        .Table--Wrapper {
+            margin-bottom: 3rem;
+        
+            }
+             
+            &__Image {
+                height: 34rem;
+            }
+    
+                 &__Info {
+                    font-size: 2rem;
+                }
+    
+                &__Price {
+                    font-size: 2rem;
+                }
+    
+                &__Brand {
+                    font-family: 'Raleway', sans-serif;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: 2rem;
+                }
+
+    }
+
+
+}
