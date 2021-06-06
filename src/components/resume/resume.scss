@@ -1,0 +1,351 @@
+@use '../partials/reset.scss' as *;
+
+.BG__Color {
+    background-color: rgb(148, 172, 243);
+    padding: 2rem 0.5rem
+}
+
+.Resume {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    background-color: royalblue;
+    border-radius: 5px;
+
+    &__Left--Container {
+        background-color: rgb(255, 255, 255);
+        width: 60%;
+        padding: 1.5rem 0.7rem;
+    }
+
+    &__Header {
+        text-align: left;
+        overflow-wrap: break-word;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+        margin-bottom: 1.5rem;
+        text-align: left;
+
+        h2 {
+            text-transform: uppercase;
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            text-transform: uppercase;
+            font-size: 1.4rem;
+            font-weight: 200;
+        }
+    }
+
+    &__Projects {
+        overflow-wrap: break-word;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+        margin-bottom: 1.5rem;
+
+        h3 {
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: rgb(16, 132, 199);
+            margin-bottom: 0.8rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            font-weight: 200;
+            line-height: 1.4rem;
+            margin-bottom: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        p > span {
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+    }
+
+    &__Experience {
+        overflow-wrap: break-word;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+        margin-bottom: 1.5rem;
+
+        h3 {
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: rgb(16, 132, 199);
+            margin-bottom: 0.8rem;
+        }
+
+        h4 {
+            font-size: 1.3rem;
+            font-weight: 400;
+            margin-bottom: 0.8rem;
+        }
+
+        h5 {
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            font-weight: 400;
+            margin-bottom: 0.8rem;
+        }
+
+        ul {
+            margin-left: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            font-size: 1.1rem;
+            font-weight: 400;
+            margin-bottom: 0.8rem;   
+        }
+    }
+
+    &__Education {
+
+        h3{
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: rgb(16, 132, 199);
+            margin-bottom: 0.8rem;
+        }
+
+        h4 {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        h5 {
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            font-weight: 200;
+            margin-bottom: 0.8rem;
+        }
+
+    }
+
+    &__Right--Container {
+        background-color: rgb(248, 247, 247);
+        width: 40%;
+        padding: 1.5rem 0.7rem;
+
+    }
+
+    &__Contact-Info {
+        text-align: left;
+        overflow-wrap: break-word;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+        margin-bottom: 1.5rem;
+        
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 0.8rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            font-weight: 200;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    &__Skills {
+        overflow-wrap: break-word;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+        margin-bottom: 1.5rem;
+
+        h3 {
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: rgb(16, 132, 199);
+            margin-bottom: 0.8rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            font-weight: 200;
+            line-height: 1.7rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    &__Career-Summary {
+        overflow-wrap: break-word;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+        margin-bottom: 1.5rem;
+
+        h3 {
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: rgb(16, 132, 199);
+            margin-bottom: 0.8rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            font-weight: 200;
+            line-height: 1.7rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+
+    .Resume {
+    
+        &__Left--Container {
+            width: 65%;
+            padding: 2.5rem 1.5rem;
+        }
+    
+        &__Header {
+            margin-bottom: 4.5rem;
+    
+            h2 {
+                font-size: 4rem;
+            }
+    
+            h3 {
+                font-size: 2.2rem;
+            }
+        }
+    
+        &__Projects {
+            margin-bottom: 1.5rem;
+    
+            h3 {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+    
+            p {
+                font-size: 1.3rem;
+                font-weight: 200;
+                line-height: 1.4rem;
+                margin-bottom: 1rem;
+                margin-top: 1rem;
+            }
+    
+            p > span {
+                text-transform: uppercase;
+                font-weight: bold;
+                margin-right: 0.5rem;
+            }
+        }
+    
+        &__Experience {
+            overflow-wrap: break-word;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+            margin-bottom: 1.5rem;
+    
+            h3 {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+    
+            h4 {
+                font-size: 1.8rem;
+                margin-bottom: 0.8rem;
+            }
+    
+            h5 {
+                font-size: 1.4rem;
+            }
+    
+            ul {
+                margin-bottom: 1.5rem;
+            }
+    
+            li {
+                font-size: 1.3rem;
+                font-weight: 400;
+            }
+        }
+    
+        &__Education {
+    
+            h3 {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+    
+            h4 {
+                font-size: 1.6rem;
+            }
+    
+            h5 {
+                font-size: 1.6rem;
+                margin-bottom: 1rem;
+            }
+    
+        }
+    
+        &__Right--Container {
+            background-color: rgb(248, 247, 247);
+            width: 35%;
+            padding: 2.5rem 1.5rem;
+    
+        }
+    
+        &__Contact-Info {
+            margin-bottom: 3rem;
+            
+            h3 {
+                font-size: 2rem;
+            }
+    
+            p {
+                font-size: 1.4rem;
+                margin-bottom: 0.8rem;
+            }
+        }
+    
+        &__Skills {
+            margin-bottom: 3rem;
+    
+            h3 {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+    
+            p {
+                font-size: 1.5rem;
+                line-height: 1.8rem;
+            }
+        }
+    
+        &__Career-Summary {
+            margin-bottom: 3rem;
+    
+            h3 {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+    
+            p {
+                font-size: 1.5rem;
+                line-height: 1.8rem;
+                margin-bottom: 0.7rem;
+            }
+        }
+    }
+
+}

@@ -4,6 +4,7 @@ import Home from './components/home/home';
 import Navbar from './components/navbar/navbar';
 import TableSearch from './components/tableSearch/tableSearch';
 import TaskList from './components/taskList/taskList';
+import Resume from './components/resume/resume';
 import Tables from './Data/data.json';
 
 function App() {
@@ -71,6 +72,7 @@ function App() {
             )
           }} />
           <Route path='/TaskList' exact component={TaskList} />
+          <Route path='/ResumeTags' exact component={Resume} />
         </Switch>
       </BrowserRouter>
 

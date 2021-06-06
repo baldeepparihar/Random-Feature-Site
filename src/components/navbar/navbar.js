@@ -14,6 +14,7 @@ function Navbar() {
                     <NavLink to="/" className="Navbar__Links">Home</NavLink>
                     <NavLink to="/TableSearch" activeClassName="Selected" className="Navbar__Links">Coffee Table Search</NavLink>
                     <NavLink to="/TaskList" activeClassName="Selected" className="Navbar__Links">Task List</NavLink>
+                    <NavLink to="/ResumeTags" activeClassName="Selected" className="Navbar__Links">Resume + Tags </NavLink>
                 </div>
         </div>
     )
