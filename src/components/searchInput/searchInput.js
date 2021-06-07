@@ -15,7 +15,7 @@ function SearchInput(props) {
         <div>
              <input
                 className="Search" 
-                placeholder="Search by name or sku #" 
+                placeholder="Search by brand or sku #" 
                 type="text" 
                 value={searchTerm} 
                 onChange={getNameValue}/>
