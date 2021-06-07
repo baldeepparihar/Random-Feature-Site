@@ -1,0 +1,50 @@
+@use '../partials/reset.scss' as *;
+
+.TagInput {
+
+
+    &__Tag--Wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__Tag {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+        background-color: rgb(142, 194, 255);
+        width: auto;
+        font-size: 1.2rem;
+        color: #fff;
+        margin: 0.5rem 0.5rem;
+        padding: 0.5rem;
+    }
+
+    &__Tag--Icon {
+        width: 1.3rem;
+        margin-left: 0.5rem;
+    }
+
+    &__Search {
+        border: none;
+        border-bottom: 2px solid rgb(142, 194, 255);
+        width: 90%;
+        height: 3rem;
+        margin-top: 3rem;
+        background-color: rgb(248, 247, 247);
+
+        &:focus {
+            outline: none;
+            padding-left: 1rem;
+        }
+        
+    }
+}
+
+::placeholder {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    margin-left: 1rem;
+    color: rgb(142, 194, 255);
+}

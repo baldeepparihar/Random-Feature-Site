@@ -1,5 +1,6 @@
 import React from 'react';
 import './resume.scss';
+import TagInput from './tagInput';
 
 function Resume() {
     return (
@@ -61,17 +62,23 @@ function Resume() {
                     <div className="Resume__Right">
                         <div className="Resume__Contact-Info">
                         <h3>Bparihar1@yahoo.com</h3>
+                        <h3>310 989 8024</h3>
                         <p>https://linkedin.com/baldeepparihar</p>
                         <p>https://github.com/baldeepparihar</p>
                         </div>
                         <div className="Resume__Skills">
                             <h3>skills</h3>
                             <p>HTML, CSS, SASS, BEM, JavaScript, React, Node.js, Express.js, Agile, Kanban, Git, Git Flow, GitHub, MySQL</p>
+                            <div>
+                                <TagInput />
+                            </div>
                         </div>
                         <div className="Resume__Career-Summary">
                             <h3>career summary</h3>
-                            <p>With a background in the creative arts, I am excited to focus that passion and creativity towards Web Development.  I love continuously learning and tackling new challenges.</p>
-                            <p>I have developed many soft-skills, such as effective interpersonal communication as well as sales and leadership qualities.  I am eager to apply my eye for design and love of learning to my next role in Web Development.</p>
+                            <p>With a background in the creative arts, I am excited to focus that passion and creativity towards Web Development.  
+                                I love continuously learning and tackling new challenges.</p>
+                            <p>I have developed many soft-skills, such as effective interpersonal communication as well as sales and leadership 
+                                qualities.  I am eager to apply my eye for design and love of learning to my next role in Web Development.</p>
                         </div>
                     </div>
                 </div>
