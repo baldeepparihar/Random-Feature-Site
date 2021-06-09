@@ -1,6 +1,7 @@
 import React from 'react';
 import './resume.scss';
 import TagInput from './tagInput';
+import UploadForm from './uploadForm';
 
 function Resume() {
     return (
@@ -15,16 +16,16 @@ function Resume() {
                         <div className="Resume__Projects">
                             <h3>Projects</h3>
                             <p><span>A Night At Home:</span>This app takes the concept of “Netflix and Chill,” and expands on it. 
-                                Working in SASS, JavaScript, React, Node.js and Express.js I built a custom data file to get the 
+                                Working in SASS, JavaScript, React, Node.js and Express.js I built a custom data set to get the 
                                 functionality I was seeking. Now you can search globally for new releases from around the world on 
                                 Netflix by region/country. Also if you desire you can also find cocktail and cuisine options from 
-                                those countries as well. You can curate your perfect night at home or throw a theme party and invite 
+                                those countries as well. You can create your perfect night at home or throw a theme party and invite 
                                 all of your friends as you will have plenty of drink and food recipes from around the world. 
                                 https://a-night-at-home-client-side.netlify.app</p>
                             <p><span>The Random Feature Site:</span>A curated collection of not so random, "Random Features."  From a
                                 coffee table search like you would see on online furniture website, to a note pad that allows you to
                                 jot down daily tasks.  You can also edit and remove the tasks and check them off once you are done.  
-                                The site  also features a resume page where you can add skill tags and upload a cover letter.</p>
+                                The site also features a resume page where you can add skill tags and upload a cover letter.</p>
                         </div>
                         <div className="Resume__Experience">
                             <h3>Experience</h3>
@@ -82,7 +83,8 @@ function Resume() {
                         </div>
                     </div>
                 </div>
-                </div>
+            </div>
+            <UploadForm />
         </div>
     )
 }
