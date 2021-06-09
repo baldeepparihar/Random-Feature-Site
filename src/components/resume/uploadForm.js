@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Pdf from './Pdf';
 import axios from 'axios';
+import './uploadForm.scss';
 
 function UploadForm() {
     const [file, setFile] = useState('');
@@ -41,13 +41,16 @@ function UploadForm() {
 
     return (
         <div>
-            <form onSubmit={handleSubmit}>
+            <h3>Upload an image</h3>
+            <form className="Form" onSubmit={handleSubmit}>
                 <input 
+                className="Form__Input"
                 type="file"
-                name="pdf"
+                name="image"
                 onChange={handleChange}
                 />
                 <button
+                className="Form__Button"
                 type='submit'
                 value='submit'
                 >
@@ -55,12 +58,13 @@ function UploadForm() {
                 </button>
             </form>
 
-        { upload ? <div>
+        { upload ? 
             <div>
-                <h3>{upload.fileName}</h3>
-                <img src={upload.filePath} alt="" />
+                <div className="Upload__Image--Container">
+                    <h3>{upload.fileName}</h3>
+                    <img src={upload.filePath} alt="" />
                 </div>
-            </div> 
+            </div>
             : null
              }
         

@@ -81,10 +81,13 @@ function Resume() {
                             <p>I have developed many soft-skills, such as effective interpersonal communication as well as sales and leadership 
                                 qualities.  I am eager to apply my eye for design and love of learning to my next role in Web Development.</p>
                         </div>
+                        
+                        <UploadForm />
+        
                     </div>
                 </div>
             </div>
-            <UploadForm />
+        
         </div>
     )
 }
