@@ -10,7 +10,7 @@
     position: relative;
     padding: 2rem 2rem;
     background-image: radial-gradient(circle, #858e9b, #929eac, #9faebe, #adbecf, #bacfe1);
-    height: 100vh;
+    height: 120vh;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -45,6 +45,7 @@
     &__Iframe {
         width: 28rem;
         height: 28rem;
+        margin-top: 3rem;
     }
 }
 

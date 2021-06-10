@@ -5,7 +5,6 @@ import './tableSearch.scss';
 
 function TableSearch(props) {
     const { tableList, selectedImage, setSelectedImage, images, searchTerm, setSearchTerm, handleNameSearch } = props;
-    // console.log('log', props)
     
     return (
         <div>

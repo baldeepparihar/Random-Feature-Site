@@ -1,7 +1,6 @@
 import React from 'react';
 import './resume.scss';
 import TagInput from './tagInput';
-import UploadForm from './uploadForm';
 
 function Resume() {
     return (
@@ -21,11 +20,11 @@ function Resume() {
                                 Netflix by region/country. Also if you desire you can also find cocktail and cuisine options from 
                                 those countries as well. You can create your perfect night at home or throw a theme party and invite 
                                 all of your friends as you will have plenty of drink and food recipes from around the world. 
-                                https://a-night-at-home-client-side.netlify.app</p>
+                                </p>
                             <p><span>The Random Feature Site:</span>A curated collection of not so random, "Random Features."  From a
                                 coffee table search like you would see on online furniture website, to a note pad that allows you to
                                 jot down daily tasks.  You can also edit and remove the tasks and check them off once you are done.  
-                                The site also features a resume page where you can add skill tags and upload a cover letter.</p>
+                                The site also features a resume page where you can add skill tags.</p>
                         </div>
                         <div className="Resume__Experience">
                             <h3>Experience</h3>
@@ -81,8 +80,6 @@ function Resume() {
                             <p>I have developed many soft-skills, such as effective interpersonal communication as well as sales and leadership 
                                 qualities.  I am eager to apply my eye for design and love of learning to my next role in Web Development.</p>
                         </div>
-                        
-                        <UploadForm />
         
                     </div>
                 </div>

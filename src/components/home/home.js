@@ -12,7 +12,7 @@ function Home() {
                 </div>
                 
                 <div className="Home__Iframe--Wrapper">
-                    <iframe className="Home__Iframe" src="https://player.vimeo.com/video/182592195" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    <iframe className="Home__Iframe" src="https://www.loom.com/embed/cc4097fda97648e2bb7233baf6c90e31" frameBorder="0" webkitallowfullscreen mozallowfullscreen allowFullScreen></iframe>
                 </div>
             </div>
             <div className="ContactInfo">

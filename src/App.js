@@ -19,11 +19,9 @@ function App() {
     setInitialTables(Tables);
     getImages();
     getSelectedImage();
-    console.log(initialTables)
   }, []);
 
 
-  console.log(Tables)
   let imageListAll = Tables.map(table => {
     return table.images;
   })

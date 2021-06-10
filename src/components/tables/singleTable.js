@@ -66,20 +66,3 @@ function SingleTable(props) {
 export default SingleTable;
 
 
-
-
-
-// function Student(props) {
-//     const { students, updateStudent } = props;
-
-//     return (
-//         <div>
-//             <div className="Student">
-//                 {students.map(student => {
-//                     return <SingleStudent key={student.id} student={student} updateStudent={updateStudent} />
-//                 })}
-//             </div>
-//         </div>
-//     )
-// }
-
